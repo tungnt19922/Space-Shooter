@@ -10,6 +10,9 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
+        var explosion = Instantiate(explosionPrefab,transform.position, transform.rotation);
+        Destroy(explosion, 4);
         Destroy(gameObject);
+
     }
 }
