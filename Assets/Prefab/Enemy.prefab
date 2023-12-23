@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -7918977700949203333}
   - component: {fileID: -8535131068128967412}
   - component: {fileID: 1814271586962627112}
-  - component: {fileID: 9079131895985666267}
+  - component: {fileID: 1835230859563391114}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -147,25 +147,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6117c774619ee14fb7338e60302c119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 0}
---- !u!95 &9079131895985666267
-Animator:
-  serializedVersion: 5
+  explosionPrefabs: {fileID: 690109520695901793, guid: 1fe0346a28b3f3942a12268d48f5be2c,
+    type: 3}
+  defaultHealthPoint: 3
+  healthPoint: 0
+--- !u!114 &1835230859563391114
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4338755380319020554}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dfd561afd4f3ac54da5c26178b196c6c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1a345bb790efd4196f2d222ac9e1a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 1814271586962627112}
+  damage: 1
