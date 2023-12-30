@@ -7,6 +7,8 @@ public class Health : MonoBehaviour
     [SerializeField] private GameObject explosionPrefabs;
     [SerializeField] private int defaultHealthPoint;
     [SerializeField] private int healthPoint;
+    public System.Action onDead;
+
 
     private void Start()
     {
@@ -27,5 +29,6 @@ public class Health : MonoBehaviour
         var explosion = Instantiate(explosionPrefabs, transform.position, transform.rotation);
         Destroy(explosion, 2);
         Destroy(gameObject);
+        onDead?.Invoke();
     }
 }
